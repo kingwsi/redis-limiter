@@ -19,7 +19,7 @@ public @interface Limiter {
     int replenishRate() default 1;
 
     // 桶容量（并发数量）
-    int burstCapacity() default 5;
+    int burstCapacity() default 2;
 
     // 每次请求消耗令牌数量
     int requestedTokens() default 1;

@@ -33,7 +33,7 @@ public class RedisLimiterApplication {
         return "SUCCESS";
     }
 
-    @Limiter(type = LimiterType.USER)
+    @Limiter(type = LimiterType.USER, burstCapacity = 1)
     @GetMapping("/limiterByUserId")
     public String limiterByUserId() {
         return "SUCCESS";
